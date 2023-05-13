@@ -1,40 +1,72 @@
 @charset "utf-8";
 
-/* 
-    Style by ChatGPT
-    May 13, 2023
-*/
-
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 .container {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    background-color: #fff;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    color: #333;
 }
 
 .task-list {
     list-style-type: none;
     padding: 0;
+    margin-top: 20px;
 }
 
 .task-list li {
     margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
     display: flex;
     align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .task-list li input[type="checkbox"] {
     margin-right: 10px;
 }
 
+.task-list li.completed {
+    background-color: #e1e1e1;
+}
+
 .task-list li.completed span {
     text-decoration: line-through;
     opacity: 0.5;
+}
+
+.task-list li span {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+.task-list li button {
+    padding: 5px 10px;
+    background-color: #ff5e5e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-list li button:hover {
+    background-color: #ff3b3b;
 }
 
 .add-task-form {
@@ -44,9 +76,22 @@ body {
 
 .add-task-form input[type="text"] {
     flex: 1;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    outline: none;
 }
 
 .add-task-form button {
-    padding: 5px 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-task-form button:hover {
+    background-color: #45a049;
 }
