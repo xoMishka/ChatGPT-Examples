@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* 
+    Style by ChatGPT
+    May 13, 2023
+*/
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.task-list li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task-list li.completed span {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.add-task-form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.add-task-form input[type="text"] {
+    flex: 1;
+    padding: 5px;
+}
+
+.add-task-form button {
+    padding: 5px 10px;
+}
